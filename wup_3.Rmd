@@ -35,19 +35,20 @@ Seat is a categorical variable
 
 So we use the numerical~cat helper file
 
-
+# Results 
 
 ## Now with ggplot - first select the basic data
 
 ```{r}
 basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```
+
 ## Now add in boxplot
 
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
+  According to the box plot, it shows that more alcohol consumers are in the back seats.
   
 ### get fancy  
 
