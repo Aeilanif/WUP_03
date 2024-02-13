@@ -46,9 +46,28 @@ This boxplot shows that students who sit in the back row tend to drink more.
 
 ## Numerical description
 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
 
-## Inferential description 
+According to this numerical description it shows that the median for the backseats 3.5, the front seat consumption was 0.0, and the middle seat was 1.0. So apparently the people who drink more sit in the back.
+
+## Inferential 
+
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+In this case, the p-value is 0.000116. 0.000116<0.05.This means that students in all the rows do not consume an amount of alcohol.
+
+## When significant follow up with TukeyHSD  
+
+```{r}
+plot(TukeyHSD(model1))
+```
 
 
 # Discussion and Conclusion
+
 
