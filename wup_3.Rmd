@@ -44,29 +44,11 @@ boxplot(alcohol~Seat,data=davisdata)
 
 This boxplot shows that students who sit in the back row tend to drink more.
 
-## Now with ggplot - first select the basic data
+## Numerical description
 
-```{r}
-basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
-```
 
-## Now add in boxplot
+## Inferential description 
 
-```{r}
-basicCN + geom_boxplot()
-```
-  According to the box plot, it shows that more alcohol consumers are in the back seats.
-  
-### get fancy  
 
-```{r}
-basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
-```
-
-## Numerical Summarys 
-
-## Inferential Tests
-
-## Conclusions
-
+# Discussion and Conclusion
 
