@@ -67,8 +67,8 @@ In this case, the p-value is 0.000116. 0.000116<0.05.This means that students in
 plot(TukeyHSD(model1))
 ```
 
+In this graph, it shows that the seats in the back row drinks more than the front and middle rows. There is no evidence of alcohol consumption between the front and middle row.
 
 # Discussion and Conclusion
 
-
-
+There is no difference between the average number of drinks imbibed between people conditioned on the row they sit in. So in that case we reject $H_0$.
