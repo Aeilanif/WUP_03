@@ -71,3 +71,4 @@ plot(TukeyHSD(model1))
 # Discussion and Conclusion
 
 
+
