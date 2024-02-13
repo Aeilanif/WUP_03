@@ -18,15 +18,15 @@ davisdata <- read.csv(file="UCDavis.csv")
 
 # Introduction 
 
-Data is from the UCDavis.csv
-
 Is the average amount consumed per week different for the different seating rows?
 
-$H_0$: There is no difference in the average amount of alcohol consumed per week based on seating row.
+$H_0$: There is no difference between the average number of drinks imbibed between people conditioned on the row they sit in.
 
-$H_A$: There IS a difference in the average amount of alcohol consumed per week based on seating row.
+$H_A$: The average number drinks is different between at least two rows.   
 
 # Methods 
+
+Data is from the UCDavis.csv
 
 We are trying to predict alcohol consumption based on row alcohol ~ Seat
 
@@ -35,7 +35,14 @@ Seat is a categorical variable
 
 So we use the numerical~cat helper file
 
-# Results 
+# Description 
+## Graphical description 
+
+```{r}
+boxplot(alcohol~Seat,data=davisdata)
+```
+
+This boxplot shows that students who sit in the back row tend to drink more.
 
 ## Now with ggplot - first select the basic data
 
